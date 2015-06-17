@@ -33,8 +33,10 @@ public class Challenge218HardElevatorScheduling  {
         StateController stateControl = new StateController();
         //Array list is for faster random access
         ArrayList<ElevatorCarNode> elevators = new ArrayList();
-        //Linked list is for faster deletion
-        LinkedList<LiftRequestNode> liftRequests = new LinkedList();       
+        //Linked list is for faster deletion holds request not given to the program
+        LinkedList<LiftRequestNode> liftRequests = new LinkedList();      
+        //Requests given to the program
+        LinkedList<LiftRequestNode> queuedRequests = new LinkedList();
         File data = new File("C:\\Users\\sammy\\Documents\\NetBeansProjects\\[2015-06-12] Challenge #218 [Hard] Elevator Scheduling\\src\\elevatorScheduling\\data.txt");
        
         //grab input from datafile - INPUT

@@ -5,6 +5,8 @@
  */
 package elevatorScheduling;
 
+import java.util.PriorityQueue;
+
 /**
  *
  * @author sammy
@@ -16,7 +18,7 @@ public class ElevatorCarNode {
     private float floorsPerSecond;// Speed of the elecator in floors per second
     private float currentFloor;   // floor at current timepoint
     private int startingFloor;    // floor the elevator starts at
-
+    private PriorityQueue<LiftRequestNode> requestQueue = new PriorityQueue();
     //public members
     
     //helper functions
